@@ -157,7 +157,16 @@ nav
  color:#FEB801 ;
 }
 
-.nav-ber img {
+.nav-bar {
+  transform: translateX(1600px);
+  transition: 1s;
+}
+
+.nav-bar.show{
+  transform: translate(100px);
+}
+
+.nav-bar img {
   display: block;
   margin: 0 auto;
 }
@@ -214,6 +223,14 @@ Slider
 */
 .swiper{
   margin-top: 250px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s 1s;
+}
+
+.swiper.show{
+  transform: none;
+  opacity: 1;
 }
 .swiper-slide img {
   display: block;
@@ -226,6 +243,8 @@ Slider
   .swiper{
     margin: 0;
     margin-top: 30px;
+    transform: translateY(20px);
+    transition: 1s;
   }
   .swiper-slide img {
     display: block;
@@ -256,6 +275,46 @@ section
  font-weight: 300;
  }
 
+ .aniamation-headline{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 1s;
+ }
+
+ .aniamation-headline.show{
+  transform: none;
+  opacity: 1;
+ }
+ .animation-secondline{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 1.5s;
+ }
+
+ .animation-secondline.show{
+  transform: none;
+  opacity: 1;
+ }
+
+ .aniamation-headline2{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 1.5s;
+ }
+.aniamation-headline2.show{
+  transform: none;
+  opacity: 1;
+ }
+ .animation-secondline2{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 2s;
+ }
+
+ .animation-secondline2.show{
+  transform: none;
+  opacity: 1;
+ }
  @media screen and (max-width:768px){
  
 .section-headline{
@@ -268,6 +327,46 @@ section
  font-size: 16px;
  font-weight: 300;
  }
+ .aniamation-headline{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 2s;
+ }
+
+ .aniamation-headline.show{
+  transform: none;
+  opacity: 1;
+ }
+ .animation-secondline{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 2.5s;
+ }
+
+ /* .animation-secondline.show{
+  transform: none;
+  opacity: 1;
+ }
+
+ .aniamation-headline2{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 1.5s;
+ }
+.aniamation-headline2.show{
+  transform: none;
+  opacity: 1;
+ }
+ .animation-secondline2{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s 2s;
+ }
+
+ .animation-secondline2.show{
+  transform: none;
+  opacity: 1;
+ } */
 }
 
 
@@ -283,8 +382,30 @@ section
   justify-content: center;
  }
 
+ .concept-image {
+  transform: translateY(30px);
+  transition: 1s 1s;
+  opacity: 0;
+ }
+
+ .concept-image.show{
+  transform: none;
+  opacity: 1;
+ }
+
  figcaption {
   margin-left: 55px;
+ }
+
+ .concept-text{
+  transform: translateY(30px);
+  transition: 1s 1.5s;
+  opacity: 0;
+ }
+
+ .concept-text.show{
+  transform: none;
+  opacity: 1;
  }
 
  @media screen and (max-width:768px){
@@ -296,6 +417,30 @@ section
     display: block;
     margin: 0 auto;
    }
+
+   
+ .concept-image {
+  transform: translateY(30px);
+  transition: 1s 3s;
+  opacity: 0;
+ }
+
+ .concept-image.show{
+  transform: none;
+  opacity: 1;
+ }
+
+ .concept-textSP{
+  transform: translateY(30px);
+  transition: 1s 1.5s;
+  opacity: 0;
+ }
+
+ .concept-textSP.show{
+  transform: none;
+  opacity: 1;
+ }
+
 
    figcaption p {
     padding-top: 40px;
@@ -347,6 +492,81 @@ section
   box-shadow: 0 0 0 #22CB15;
 }
 
+.img-1{
+  transform: translateY(30px);
+  transition: 1s 2s;
+  opacity: 0;
+}
+.img-1.show{
+ transform: none;
+ opacity: 1;
+}
+.img-2{
+  transform: translateY(30px);
+  transition: 1s 2.5s;
+  opacity: 0;
+}
+.img-2.show{
+ transform: none;
+ opacity: 1;
+}
+.img-3{
+  transform: translateY(30px);
+  transition: 1s 3s;
+  opacity: 0;
+}
+.img-3.show{
+ transform: none;
+ opacity: 1;
+}
+.img-4{
+  transform: translateY(30px);
+  transition: 1s .5s;
+  opacity: 0;
+}
+.img-4.show{
+ transform: none;
+ opacity: 1;
+}
+.img-5{
+  transform: translateY(30px);
+  transition: 1s 1s;
+  opacity: 0;
+}
+.img-5.show{
+ transform: none;
+ opacity: 1;
+}
+.img-6{
+  transform: translateY(30px);
+  transition: 1s 1.5s;
+  opacity: 0;
+}
+.img-6.show{
+ transform: none;
+ opacity: 1;
+}
+.img-7{
+  transform: translateY(50px);
+  transition: 1s 1s;
+  opacity: 0;
+}
+.img-7.show{
+ transform: none;
+ opacity: 1;
+}
+
+.gallery-button {
+  transform: translateY(30px);
+  transition: 1s 1.5s;
+  opacity: 0;
+}
+
+.gallery-button.show{
+  transform: none;
+  opacity: 1;
+}
+
  .button-hand{
   position: absolute;
   top: 0%;
@@ -371,6 +591,11 @@ section
       padding: 0;
       padding-top: 5px;
       margin: 0 auto;
+    }
+
+    .img-7{
+      width: 300px;
+      height: 250px;
     }
     
 }
