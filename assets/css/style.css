@@ -150,6 +150,11 @@ nav
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
+  transition: .5s;
+}
+
+.nav-list a:hover {
+ color:#FEB801 ;
 }
 
 .nav-ber img {
@@ -197,6 +202,11 @@ nav
     font-size: 16px;
     font-weight: bold;
   }
+
+  .nav-list a:hover {
+    color:#FEB801 ;
+   }
+   
   }
 
 /* 
@@ -320,7 +330,7 @@ section
   position: relative;
   display: block;
   text-align: center;
-  }
+ }
  .gallery-button a {
   background-color: #fff;
   border: 3px solid #22CB15;
@@ -329,7 +339,13 @@ section
   padding: 13px 160px 18px 90px;
   text-decoration: none;
   color: #22CB15;
- }
+  box-shadow: 5px 5px 0 #22CB15;
+  transition: box-shadow .25s;
+  }
+
+ .gallery-button a:hover{
+  box-shadow: 0 0 0 #22CB15;
+}
 
  .button-hand{
   position: absolute;
